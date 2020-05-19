@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Output_Result">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-36dp"
+        tools:layout_editor_absoluteY="-255dp">
+
+        <TextView
+            android:id="@+id/textViewGuess"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:text="Best Guess:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="TextView"
+            />
+
+        <TextView
+            android:id="@+id/textViewSites"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:text="Sites"
+            />
+
+        <TextView
+            android:id="@+id/textViewsitename"
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textViewurl"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="URL" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:text="" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="61dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="46dp"
+        android:clickable="true"
+        android:onClick="gotoHome"
+        app:backgroundTint="#68BDFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:rippleColor="#0C4963"
+        app:srcCompat="@android:drawable/ic_search_category_default" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
