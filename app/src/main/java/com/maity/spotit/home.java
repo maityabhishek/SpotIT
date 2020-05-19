@@ -30,6 +30,7 @@ public class home extends AppCompatActivity {
 
     private RequestQueue requestQueue;
     private ProgressDialog progressDialog;
+    private final String KEY;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,7 +66,7 @@ public class home extends AppCompatActivity {
     }
     public void submit(String encImage)
     {
-        String Url="https://vision.googleapis.com/v1/images:annotate?key=AIzaSyCwKj3R1Lu3gMDefhi3cWJDNZLK_RrQS-U";
+        String Url="https://vision.googleapis.com/v1/images:annotate?key="+KEY;
         final String savedata="{\n" +
                 "  \"requests\":[\n" +
                 "    {\n" +
